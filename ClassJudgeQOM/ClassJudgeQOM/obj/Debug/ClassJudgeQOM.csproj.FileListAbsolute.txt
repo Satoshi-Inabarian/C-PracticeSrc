@@ -1,0 +1,6 @@
+D:\Program\C#\ClassJudgeQOM\ClassJudgeQOM\bin\Debug\ClassJudgeQOM.dll
+D:\Program\C#\ClassJudgeQOM\ClassJudgeQOM\bin\Debug\ClassJudgeQOM.pdb
+D:\Program\C#\ClassJudgeQOM\ClassJudgeQOM\obj\Debug\ClassJudgeQOM.csproj.AssemblyReference.cache
+D:\Program\C#\ClassJudgeQOM\ClassJudgeQOM\obj\Debug\ClassJudgeQOM.csproj.CoreCompileInputs.cache
+D:\Program\C#\ClassJudgeQOM\ClassJudgeQOM\obj\Debug\ClassJudgeQOM.dll
+D:\Program\C#\ClassJudgeQOM\ClassJudgeQOM\obj\Debug\ClassJudgeQOM.pdb

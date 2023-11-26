@@ -1,0 +1,8 @@
+Windows
+統合開発環境 IDE Visual Studio
+マルチプラットフォーム　.NET MAUI
+言語　C#
+
+
+.NET MAUIとは https://learn.microsoft.com/ja-jp/dotnet/maui/what-is-maui?view=net-maui-7.0
+ネイティブ開発手順 https://learn.microsoft.com/ja-jp/dotnet/maui/get-started/first-app?view=net-maui-7.0&tabs=vswin&pivots=devices-android

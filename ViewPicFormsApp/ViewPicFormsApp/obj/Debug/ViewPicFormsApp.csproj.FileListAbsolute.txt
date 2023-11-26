@@ -1,0 +1,16 @@
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\ViewPicFormsApp.exe.config
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\ViewPicFormsApp.exe
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\ViewPicFormsApp.pdb
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.csproj.AssemblyReference.cache
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.csproj.SuggestedBindingRedirects.cache
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.Form1.resources
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.Properties.Resources.resources
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.csproj.GenerateResource.cache
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.csproj.CoreCompileInputs.cache
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.exe
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.pdb
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\Microsoft.WindowsAPICodePack.dll
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\Microsoft.WindowsAPICodePack.xml
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+D:\Program\C#\ViewPicFormsApp\ViewPicFormsApp\obj\Debug\ViewPicFormsApp.csproj.CopyComplete

@@ -1,0 +1,15 @@
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.csproj.AssemblyReference.cache
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.AssemblyInfoInputs.cache
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.AssemblyInfo.cs
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.csproj.CoreCompileInputs.cache
+D:\Program\C#\ConsoleCancel\ConsoleCancel\bin\Debug\net7.0\ConsoleCancel.exe
+D:\Program\C#\ConsoleCancel\ConsoleCancel\bin\Debug\net7.0\ConsoleCancel.deps.json
+D:\Program\C#\ConsoleCancel\ConsoleCancel\bin\Debug\net7.0\ConsoleCancel.runtimeconfig.json
+D:\Program\C#\ConsoleCancel\ConsoleCancel\bin\Debug\net7.0\ConsoleCancel.dll
+D:\Program\C#\ConsoleCancel\ConsoleCancel\bin\Debug\net7.0\ConsoleCancel.pdb
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.dll
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\refint\ConsoleCancel.dll
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.pdb
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ConsoleCancel.genruntimeconfig.cache
+D:\Program\C#\ConsoleCancel\ConsoleCancel\obj\Debug\net7.0\ref\ConsoleCancel.dll

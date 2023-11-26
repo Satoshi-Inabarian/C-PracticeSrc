@@ -1,0 +1,15 @@
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.csproj.AssemblyReference.cache
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.AssemblyInfoInputs.cache
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.AssemblyInfo.cs
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.csproj.CoreCompileInputs.cache
+D:\Program\C#\Consoletimer\Consoletimer\bin\Debug\net7.0\Consoletimer.exe
+D:\Program\C#\Consoletimer\Consoletimer\bin\Debug\net7.0\Consoletimer.deps.json
+D:\Program\C#\Consoletimer\Consoletimer\bin\Debug\net7.0\Consoletimer.runtimeconfig.json
+D:\Program\C#\Consoletimer\Consoletimer\bin\Debug\net7.0\Consoletimer.dll
+D:\Program\C#\Consoletimer\Consoletimer\bin\Debug\net7.0\Consoletimer.pdb
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.dll
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\refint\Consoletimer.dll
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.pdb
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\Consoletimer.genruntimeconfig.cache
+D:\Program\C#\Consoletimer\Consoletimer\obj\Debug\net7.0\ref\Consoletimer.dll

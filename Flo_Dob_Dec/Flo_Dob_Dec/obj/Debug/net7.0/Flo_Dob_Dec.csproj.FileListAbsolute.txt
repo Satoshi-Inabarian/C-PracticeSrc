@@ -1,0 +1,15 @@
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\bin\Debug\net7.0\Flo_Dob_Dec.exe
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\bin\Debug\net7.0\Flo_Dob_Dec.deps.json
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\bin\Debug\net7.0\Flo_Dob_Dec.runtimeconfig.json
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\bin\Debug\net7.0\Flo_Dob_Dec.dll
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\bin\Debug\net7.0\Flo_Dob_Dec.pdb
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.csproj.AssemblyReference.cache
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.AssemblyInfoInputs.cache
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.AssemblyInfo.cs
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.csproj.CoreCompileInputs.cache
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.dll
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\refint\Flo_Dob_Dec.dll
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.pdb
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\Flo_Dob_Dec.genruntimeconfig.cache
+D:\Program\C#\Flo_Dob_Dec\Flo_Dob_Dec\obj\Debug\net7.0\ref\Flo_Dob_Dec.dll

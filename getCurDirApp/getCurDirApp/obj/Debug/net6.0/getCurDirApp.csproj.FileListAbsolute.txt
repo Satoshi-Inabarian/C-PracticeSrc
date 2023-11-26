@@ -1,0 +1,15 @@
+D:\Program\C#\getCurDirApp\getCurDirApp\bin\Debug\net6.0\getCurDirApp.exe
+D:\Program\C#\getCurDirApp\getCurDirApp\bin\Debug\net6.0\getCurDirApp.deps.json
+D:\Program\C#\getCurDirApp\getCurDirApp\bin\Debug\net6.0\getCurDirApp.runtimeconfig.json
+D:\Program\C#\getCurDirApp\getCurDirApp\bin\Debug\net6.0\getCurDirApp.dll
+D:\Program\C#\getCurDirApp\getCurDirApp\bin\Debug\net6.0\getCurDirApp.pdb
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.csproj.AssemblyReference.cache
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.AssemblyInfoInputs.cache
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.AssemblyInfo.cs
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.csproj.CoreCompileInputs.cache
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.dll
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\refint\getCurDirApp.dll
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.pdb
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\getCurDirApp.genruntimeconfig.cache
+D:\Program\C#\getCurDirApp\getCurDirApp\obj\Debug\net6.0\ref\getCurDirApp.dll

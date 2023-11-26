@@ -1,0 +1,16 @@
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\bin\Debug\net7.0\ClassLibrary2.deps.json
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\bin\Debug\net7.0\ClassLibrary2.dll
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\bin\Debug\net7.0\ClassLibrary2.pdb
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\bin\Debug\net7.0\SatoLib.dll
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\bin\Debug\net7.0\SatoLib.pdb
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\bin\Debug\net7.0\SatoLib.dll.config
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.csproj.AssemblyReference.cache
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.AssemblyInfoInputs.cache
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.AssemblyInfo.cs
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.csproj.CoreCompileInputs.cache
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.csproj.CopyComplete
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.dll
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\refint\ClassLibrary2.dll
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ClassLibrary2.pdb
+D:\Program\Csharp\ClassLibrary2\ClassLibrary2\obj\Debug\net7.0\ref\ClassLibrary2.dll

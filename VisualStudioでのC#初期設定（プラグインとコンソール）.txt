@@ -1,0 +1,14 @@
+１．C#を使用する前に
+
+必要プラグイン→https://zenn.dev/midoliy/articles/9e3cff958ff89ba151de
+必要コンソール .NET →https://dotnet.microsoft.com/download これないとデバッグ不可
+
+２．VS Code、C#でのデバッグ手順 https://usimaru.net/vscode-install-cs/#VSCodeC
+１⃣任意フォルダ作成 
+２⃣VS Codeからフォルダを選択し、ターミナルを起動
+３⃣ ターミナルに「dotnet console」を記入し、enter  
+4⃣プロジェクトの作成
+5⃣フォルダ内のProgram.csを開き、コーディング（初期はHelllo,World!)を表示させるようになっている
+6⃣ターミナル「dotnet run」 
+
+

@@ -1,0 +1,339 @@
+１⃣コーディングルール
+参考文献:https://www.fenet.jp/dotnet/column/language/9634/
+1.パスカル形式
+    先頭大文字-GetContour,TestPlay 
+2.キャメル形式
+    先頭小文字-後大文字 getString,writeString,showImg
+3.メソッド命名規則(接頭)
+インスタンスを返すメソッド New,Make NewMakeClass();
+型を変更するメソッド To ToString,ToFloat
+public string toString(int value)
+{
+    return value.ToString(int value)
+}
+Boolean型 Is,Can,Has isString(object pbj)
+    if(obj is string)
+    return true;
+    else
+    return false;
+
+２⃣クラスとメソッド
+参考文献:https://algorithm.joho.info/programming/csharp/method-cs/
+        https://www.sejuku.net/blog/102559
+        https://www.sejuku.net/blog/100134
+
+・#Cでは、class単位のコーディングとなる。
+・class内に表記された関数は、C#ではメソッドと呼ばれる。
+・コンストラクタ（初期化メソッド）とは、必ずしも必要でない。詳しくは7⃣にて
+・インスタンス変数　＝　作成したインスタンス内で使用できる変数
+・public　クラス外でも使用可能　private クラス内のみ使用可能
+・void Test()とは戻り値がないメソッドである。
+・int Test(),string Test() などは戻り値があるメソッドとなる。
+・classは初期化メソッドを行う必要がある    
+
+
+クラス
+public class Person
+{
+    ここが、インスタンス変数（
+    用、このクラスで自由に使える変数はここで宣言してねという話
+    フォーム内で値を受け渡ししたいときは、ここで受け渡す変数を宣言する。privateでもこのclass内だったら問題なし。
+    詳しくは、MixPictureAppにあるソースを見る。
+    public string Name { get; set; }
+    public int Age { get; set; }
+    //ここがコンストラクタ（初期化メソッド）
+    初期値の設定と、引数として使うインスタンス変数の型を宣言。もちろん、戻り値設定も可能。
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+    // Other properties, methods, events...
+}
+
+class Program
+{
+    static void Main()
+    {
+        Person person1 = new Person("Yamada", 20);
+        Console.WriteLine("person1 Name = {0} Age = {1}", person1.Name, person1.Age);
+
+        // Declare new person, assign person1 to it.
+        Person person2 = person1;
+
+        // Change the name of person2, and person1 also changes.
+        person2.Name = "Sasaki";
+        person2.Age = 16;
+
+        Console.WriteLine("person2 Name = {0} Age = {1}", person2.Name, person2.Age);
+        Console.WriteLine("person1 Name = {0} Age = {1}", person1.Name, person1.Age);
+    }
+}
+
+/*
+    Output:
+    person1 Name = Leopold Age = 6
+    person2 Name = Molly Age = 16
+    person1 Name = Molly Age = 16
+*/
+
+３⃣型の宣言
+C#では、あらゆる場面において型宣言が必要にある。
+・万能  object 全てのデータ型の基礎となるもの。全てのデータ型の値が、object型の変数に代入可能。
+・文字列型 string
+・数値 int float double
+・void 型指定なし　（メソッドの場合は「戻り値なし」の指定となる）
+public void(またはstring) print(string str)
+  void Print(string str) 戻り値なし
+  string Print(string str) string型の戻り値あり
+
+
+4⃣自作クラスライブラリの呼び出し方　https://itsakura.com/csharp-dll#s1
+・visual studio 「クラスライブラリの作成」を選択
+・ライブラリ作成　url参照
+・一度ビルドを行ってdllファイルを生成（エラーが出るが気にしない）
+・呼び出したい元のソリューションファイルを呼び出し、メニュバー参照から、dllファイルを選択する。
+・using クラスライブラリ名を記入し、呼び出して使う。
+※注意点※
+１.classは、publicをつけることを原則とする。（他クラスやソリューションファイルから呼び出せなくなり、メソッドがありませんとエラーになる
+2. 自作メソッドの際は、static（静的）か、それ以外の動的かによって、初期化メソッドをする必要がある。
+namespace Testlib
+{
+
+    public class Test
+    {
+        //インスタンス（クラス内）変数
+        int num1;
+        int num2;
+
+        public int Add(int num1,int num2)
+            {
+                return 10 + num1+num2;
+            }
+    }
+}
+ここで、別のファイルから、Addメソッドを使用したいとする。しかし、以下のように表記すると、エラーとなる。
+
+using Testlib//dllファイル使うよ宣言 visualstudioで「追加」「参照」必要あり。
+
+public class Test2
+{
+    //インスタンス変数
+    int num3 = 3;
+    int num4 = 4;
+    public method1(int num3,int num4)
+     {
+        int res = Testlib.Add(1,2):
+        //res = 3となるはずだが‥エラー。・
+        int res_fin = res+num3+num4;
+        Console.Writeline(res_fin);
+        //3+3+4で10とでるはずだがでない。
+    }
+
+}
+この際は、インスタンス生成を行う必要がある。
+
+public class Test2
+{
+    //インスタンス変数
+    int num3 = 3;
+    int num4 = 4;
+    public method1(int num3,int num4)
+     {
+        //インスタンス作成
+        Testlib.Test test = new Testlib.Test();
+        int res = test.Add(1,2)://res = 3
+        int res_fin = res+num3+num4;
+        Console.Writeline(res_fin);
+        //10
+
+}
+
+
+５⃣静的クラスと静的ではない（動的とはいわないらしい）クラスとは何か。
+
+静的クラスは、インスタンスを生成しないクラスのこと。
+動的クラスとは、インスタンスを生成するクラスのこと。
+
+静的クラス：インスタンスを作成せずに使用することができる。
+    　　　　実行同時に、クラスの領域や、メソッドの領域が確保され、終了まで破棄されない。
+    　　　　メソッド内の変数や定数の領域も常にメモリ上に確保されつづける。
+　　　　　　そのため、ずっとその場でじっとしていることから「静的」というのかなあ。
+メリット：決められた処理を行うとき
+「数字を引数として受け取り3桁ごとにカンマを付与して返却するクラス」があるとして、
+これは、どんな処理でも一様に引数を受け取り処理を実行すれば良いので、Staticクラスで良い。
+
+動的クラス：　インスタンスを生成して使用すること
+動的クラスやメソッドはプログラム実行時には、メモリ上に領域を確保されない。
+インスタンス化を行ったときに、領域や処理内の関数、定数が確保され、RETURNを行うと破棄される。
+確保領域が現れては消えていくことから「動的」とよばれるのかなあ。
+
+メリット：複数の情報を保持したいときに用いる。
+例えば、「会員情報を保持し、会員情報を操作するクラス」があるとする。
+これは、会員ごとに異なる情報を保持する必要があるので、会員ごとにインスタンスが必要です。
+これは静的でないクラスです。(＝Staticがつかないクラス(なので通常は、動的とは呼びません)
+
+６⃣配列・リストの初期化・書き方
+・配列は[]
+・リストは()
+リストは後で加えたり、ある要素を削除したりできるが、配列はできない。
+配列からリストへの変換は (配列).ToListで可能。詳しくは検索。
+
+１．配列
+    -string [] strarr = new string[3];// str型配列　サイズ　＝３
+    -image [] imgarr = new image[3]; //画像フ型配列　サイズ　= 3
+    -int [] intarr = new int [3]; //数値型配列　サイズ＝３
+
+２.リスト
+    -List<String> strList = new List<string>(); str型リスト　サイズ指定なし
+    -List<Image> imgList = new List<Image>(3); image型リスト　サイズ＝３
+    -List<Int> intList = new List<Int>(3){1,2,3}; int型リスト、intList(0)=1,intList(1) = 2, intList(2) = 3
+
+7⃣コンストラクタについて　https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14128946179　回答者の説明分かりやすい。
+                        クラス、コストラクタの書き方についてはこちら　https://www.sejuku.net/blog/100134
+  classのメソッドの一番最初に書くメソッドのこと。最初に実行することで初期値を設定することができるというだけ。
+  メンバ変数に初期値を設定すれば、必要ない。
+  特殊メソッドと呼ばれる理由
+  ・一番最初に書くメソッドだから
+  ・インスタンス化をせずともこのメソッドだけ呼び出せるから（多分）
+  ・メソッドの名前をクラスの名前と一緒にするから。
+  クラス内のメンバ変数に定義してしまえば、そもそもコンストラクタを定義する必要はなく、記述も必要ない。
+
+ちなみに、Pythonではコンストラクタメソッドの記述は必須らしい。またselfという引数も必須。
+
+    例１⃣コンストラクタを使用して初期値を設定する場合
+    public class Employee 
+    {
+            //これがコンストラクタ　＝最初のメソッド
+            private Employee(string Name,string Gender,int Age)
+            {
+                Name = Name;　(Name = "Satoshi";ともかける)
+                Gender = Gender;(Gender = "male";ともかける)
+                Age = Age;;(Age = 33;ともかける)
+            }
+            //これが使いたいメソッド
+            private void getInfoEmp(Name,Gender,Age)
+            {
+                Console.WriteLine($"Name:{Name}Gender:{Gender}Age:{Age}");
+            }
+    }
+
+　　例２⃣メンバ変数を使用して初期値を設定する場合
+
+    public class Employee 
+    {
+            //メンバ変数
+            string Name; (Name = "Satoshi";と書けば、初期値設定。以下のメソッドで追加・変更も可能)
+            string Gender; 
+            int Age;
+
+            //これが使いたいメソッド
+            private void getInfoEmp(Name,Gender,Age)
+            {
+                Console.WriteLine($"Name:{Name}Gender:{Gender}Age:{Age}");
+            }
+
+            private void changeInfo(string NewName,string NewGender,int NewAge)
+            {
+                //戻り値を返さずとも、メンバ変数の値を変更できる
+                Name = NewName;
+                Gender = NewGender;
+                Age = NewAge;
+            }
+    }
+
+////使うとき
+//インスタンス化
+Employee employee = new Employee
+employee.getInfoEmp("Satoshi","Male","33");
+employee.changeName("Ai");
+employee.getInfoEmp()
+
+//Name:Satoshi Gender:Male Age:33
+//Name:Ai Gender:Male Age:33
+
+
+8⃣partial classについて　https://itsakura.com/csharp-partial-class
+    ・クラスを分割することができる。
+    ・partialクラス宣言した後に、メソッドを記述することができる。
+    ・privateで、戻り値はvoidのみ。
+
+9⃣コンソール起動の方法
+    1.記述　https://www.wareko.jp/blog/output-text-string-to-console-window-with-windows-form-application-in-c-sharp#toc4
+
+    2.visual studioで起動
+    -プロジェクトのプロパティを選択
+    -出力の種類→コンソールを選択
+
+➉C#のマルチ処理について
+C#ではマルチ処理に Taskというクラスを使う。（非同期処理という）
+
+
+戻り値のあるなし、引数のあるなしにわけて、それぞれ書き方がかいていあって、とても実用的
+https://resanaplaza.com/%E3%80%90c%E3%80%91%E8%B6%85%EF%BD%9E%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E7%B0%A1%E5%8D%98%E5%85%A5%E9%96%80/#i
+
+//例
+メイン(メイン）
+Task(サブ1)
+Task(サブ2）
+await Task.(サブ3)
+Task.(サブ4)
+という風に書くことで、メインと、サブ１～３が処理されます。
+ただしこのケースだと、サブは同時に実行されません。それは、awaitの指示によってサブ３の指示がおわるまで、待たされるためです。
+また、task3に戻り値があった場合は、その戻り値を使用するソースを記述することで、その手前で「task3終了待ち」の状態になります。
+逆に言えば、task3の中に、task.sleepをいれることによって、他のメソッドはフリーズせずに、特定時間待ちの状態を作ることができます。
+
+
+・taskを外側から停止させる方法を調べる
+https://mslgt.hatenablog.com/entry/2017/10/08/091841#20171008_stop_operation_from_outside_task_run
+https://outofmem.hatenablog.com/entry/2014/04/02/014201
+https://tech-lab.sios.jp/archives/15637#i
+―Task.runの外から処理を止める。
+
+１１．decimal、float、decimal　コンソールアプリケーション(Flo_Dob_Dec参照)
+・floatは４バイト浮動小数点型
+・doubleは８バイト浮動小数点型
+    -float→doubleへの自動はできないが、double→floatへの自動変換は行 うことができる。
+    -これは、double型が単純にfloat型よりバイト数が大きいためである。
+・decimal型は、小数点以下の計算に精度が求められる場合に使用する。
+・floatとdoubleの型変換を行って計算すると結果の精度が落ちる
+
+
+１２．internal と publicの違い
+
+internalとはアクセス修飾子であり、private,publicと同じ種類のものである。
+internalもpublicも、別ファイルから呼び出すことができる。
+同じソリューション（アセンブリ）ファイル内だったら、呼び出すことができるが、別のファイルからdllファイル経由でを呼び出すことはできない。
+つまり、何度も他のプロジェクトやアプリケーションで使いまわせるような汎用性の高いクラスは public,一つのプロジェクトでどこからでも使えるようにしたい場合はinternalを使うと便利である。
+]
+
+13.改行コード
+  Windows \r\n
+  Linux   \n
+
+
+１４．C#のクラス継承について
+C#は、静的クラスは継承はできない。（Javaはできるらしい）
+そのため、クラスを継承したい場合は、動的クラスを用いる必要がある。
+
+１５．_の意味
+_は、クラス内のフィールド変数を宣言するときに変数の冒頭に記述するのが原則。
+int _age, string _name 
+コンストラクタで、フィールド変数に値を代入する場合は、
+public constructor(int age,string name)
+{
+    _age = age;
+    _name = name; //
+}
+もしくは
+public constructor(int age,string name)
+{
+    this.age = age;
+    this.name = name;
+}
+ともできる。
+
+
+１６．Visual Studioの.NetFlameWorkでクラスを使うとき
+自分で制作したクラスを、.NetFlameworkのwindows formアプリケーションで使用したいときは、
+同じく.NetFlameworkのクラスライブラリを使用しないと、エラーが発生するので注意。.NetFlameworkはアプリケーションをつくる一つのフレームワークとして覚えよう。

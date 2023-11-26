@@ -1,0 +1,15 @@
+D:\Program\C#\taskTresultApp\taskTresultApp\bin\Debug\net7.0\taskTresultApp.exe
+D:\Program\C#\taskTresultApp\taskTresultApp\bin\Debug\net7.0\taskTresultApp.deps.json
+D:\Program\C#\taskTresultApp\taskTresultApp\bin\Debug\net7.0\taskTresultApp.runtimeconfig.json
+D:\Program\C#\taskTresultApp\taskTresultApp\bin\Debug\net7.0\taskTresultApp.dll
+D:\Program\C#\taskTresultApp\taskTresultApp\bin\Debug\net7.0\taskTresultApp.pdb
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.csproj.AssemblyReference.cache
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.AssemblyInfoInputs.cache
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.AssemblyInfo.cs
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.csproj.CoreCompileInputs.cache
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.dll
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\refint\taskTresultApp.dll
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.pdb
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\taskTresultApp.genruntimeconfig.cache
+D:\Program\C#\taskTresultApp\taskTresultApp\obj\Debug\net7.0\ref\taskTresultApp.dll

@@ -1,0 +1,54 @@
+１⃣コーディングルール
+参考文献:https://www.fenet.jp/dotnet/column/language/9634/
+1.パスカル形式
+    先頭大文字-GetContour,TestPlay 
+2.キャメル形式
+    先頭小文字-後大文字 getString,writeString,showImg
+3.メソッド命名規則(接頭)
+インスタンスを返すメソッド New,Make NewMakeClass();
+型を変更するメソッド To ToString,ToFloat
+public string toString(int value)
+{
+    return value.ToString(int value)
+}
+Boolean型 Is,Can,Has isString(object pbj)
+    if(obj is string)
+    return true;
+    else
+    return false;
+
+２⃣クラスとメソッド
+参考文献:https://algorithm.joho.info/programming/csharp/method-cs/
+        https://www.sejuku.net/blog/102559
+privateとpublicの宣言の使い分け→  https://learn.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/private
+
+・#Cでは、class単位のコーディングとなる。
+・class内に表記された関数は、C#ではメソッドと呼ばれる。
+・インスタンス変数　＝　クラス内で使用できる変数
+・void Test()とは戻り値がないメソッドである。
+・int Test(),string Test() などは戻り値があるメソッドとなる。
+・classは初期化メソッドを行う必要がある    
+    class Test
+    {
+    //インスタンス変数
+    public string Astring = "aaa"
+    public string Bstring = "bbb"
+
+    public Test(string Astring, string Bstring)
+    {
+        this.Astring = Astring;
+        this.Bstring = Bstring;
+    }
+    }
+
+３⃣型の宣言
+C#では、あらゆる場面において型宣言が必要にある。
+・object 全てのデータ型の基礎となるもの。全てのデータ型の値が、object型の変数に代入可能。
+・文字列型 string
+・数値 int float double
+・void 型指定なし　（メソッドの場合は「戻り値なし」の指定となる）
+public void(またはstring) print(string str)
+  void Print(string str) 戻り値なし
+  string Print(string str) string型の戻り値あり
+
+
